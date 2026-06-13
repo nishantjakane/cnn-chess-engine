@@ -1,1 +1,24 @@
-.vscode
+# VS Code
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model files
+*.pth
+*.pt
+*.ckpt
+
+# Training outputs
+runs/
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
