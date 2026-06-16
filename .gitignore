@@ -25,3 +25,5 @@ Thumbs.db
 
 # Stockfish binary
 stockfish/
+
+data/

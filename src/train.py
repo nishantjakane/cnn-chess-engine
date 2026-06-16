@@ -6,7 +6,7 @@ def train_one_epoch(model,loader,optimizer,criterion,device):
     running_loss = 0.0
     
     for boards,targets in loader:
-        boards = boards.to(device)
+        boards = boards.float().to(device)
         targets = targets.to(device)
 
         predictions = model(boards)
@@ -33,7 +33,7 @@ def evaluate(model,loader,criterion,device):
     with torch.no_grad():
 
         for boards,targets in loader:
-            boards = boards.to(device)
+            boards = boards.float().to(device)
             targets = targets.to(device)
 
             predictions = model(boards)
