@@ -26,4 +26,4 @@ class ChessCNN(nn.Module):
         x = self.drop(x)
         x = self.fc2(x)
 
-        return torch.tanh(x)
+        return x
